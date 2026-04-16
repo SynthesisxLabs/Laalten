@@ -24,3 +24,20 @@ body {
   background-color: rgba(201, 255, 0, 0.3);
   color: #ffffff;
 }
+
+.font-scanline {
+  -webkit-mask-image: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 3px,
+    transparent 3px,
+    transparent 5px
+  );
+  mask-image: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 3px,
+    transparent 3px,
+    transparent 5px
+  );
+}

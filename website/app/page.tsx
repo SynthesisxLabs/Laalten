@@ -69,8 +69,8 @@ export default function Home() {
         animate="visible"
         className="flex flex-col items-center text-center z-10 w-full max-w-4xl mx-auto"
       >
-        <motion.h1 variants={fadeUpVariant} className="text-5xl sm:text-6xl md:text-7xl font-pixel tracking-tight text-white leading-[1.1] mb-6 shadow-[#000_2px_2px_0px]">
-          The smartest Mac <br className="hidden sm:block" /> notch utility. <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-amber to-brand-gold">Illuminated.</span>
+        <motion.h1 variants={fadeUpVariant} className="text-5xl sm:text-6xl md:text-7xl font-pixel font-scanline tracking-tight text-white leading-[1.1] mb-6 shadow-[#000_2px_2px_0px]">
+          The smartest Mac <br className="hidden sm:block" /> notch utility. <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-amber to-brand-gold font-scanline">Illuminated.</span>
         </motion.h1>
         
         <motion.p variants={fadeUpVariant} className="text-lg sm:text-xl text-[#999] mb-12 max-w-2xl leading-relaxed">
