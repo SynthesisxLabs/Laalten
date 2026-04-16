@@ -9,12 +9,19 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
-        pixel: ["var(--font-pixel)", "monospace"],
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        neon: "#c9ff00",
+        background: "#0A0A0A",
+        foreground: "#ededed",
+        brand: {
+          amber: "#f59e0b",
+          gold: "#fbbf24",
+          glow: "rgba(245, 158, 11, 0.15)",
+        },
+        panel: {
+          bg: "#121212",
+          border: "#262626",
+        }
       },
     },
   },
