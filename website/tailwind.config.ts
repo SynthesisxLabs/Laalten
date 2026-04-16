@@ -9,10 +9,12 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
+        pixel: ["var(--font-pixel)", "monospace"],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        neon: "#c9ff00",
       },
     },
   },
