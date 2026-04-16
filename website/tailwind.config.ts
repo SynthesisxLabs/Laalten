@@ -9,6 +9,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
+        pixel: ["var(--font-pixel)", "monospace"],
       },
       colors: {
         background: "#0A0A0A",
