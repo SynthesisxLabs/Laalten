@@ -1,10 +1,20 @@
 "use client";
 
-import { Download, Github, BookOpen, TerminalSquare, Copy, Disc3, Shield, Package, LayoutTemplate } from 'lucide-react';
+import { Download, Github, BookOpen, TerminalSquare, Copy, Check, Disc3, Shield, Package, LayoutTemplate } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function Home() {
+  const [isCopied, setIsCopied] = useState(false);
+  const installCmd = "curl -sL https://raw.githubusercontent.com/SynthesisxLabs/Laalten/main/install.sh | bash";
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(installCmd);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
+  };
+
   const fadeUpVariant = {
     hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
     visible: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.8, ease: "easeOut" } }
@@ -90,8 +100,8 @@ export default function Home() {
               <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
             </div>
             <div className="text-xs text-zinc-500 font-mono">Install Laalten 1.1.0</div>
-            <button className="text-zinc-500 hover:text-white transition-colors">
-              <Copy size={16} />
+            <button onClick={handleCopy} className="text-zinc-500 hover:text-white transition-colors">
+              {isCopied ? <Check size={16} className="text-green-400" /> : <Copy size={16} />}
             </button>
           </div>
           <div className="p-6 font-mono text-[14px] sm:text-base bg-[#0f0f0f] text-zinc-300">
